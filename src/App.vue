@@ -1,9 +1,15 @@
 <template>
   <div id="app">
-    <nav-comp/>
-    <jumbo-comp/>
-    <main-comp/>
-    <footer-comp/>
+    <header>
+      <nav-comp/>
+      <jumbo-comp/>
+    </header>
+    <main>
+      <main-comp/>
+    </main>
+    <footer>
+      <footer-comp/>
+    </footer>
   </div>
 </template>
 
