@@ -9,13 +9,13 @@
             <div class="headerLogo">
             <img src="../assets/img/theme_eduprime_logo.png" alt="Edu prime logo"> 
         </div>
-        <ul>
-            <li v-for="(item, index) in datiNav" :key="index">
-                <h3 v-if="item.link !== true">{{item.title}} <span class="arrowMenu">&#9660;</span></h3>
-                <a v-else :href="item.url"><h3>{{item.title}}</h3></a>
+        <ul class="m-0">
+            <li class="m-0" v-for="(item, index) in datiNav" :key="index">
+                <h5 class="m-0" v-if="item.link !== true">{{item.title}} <span class="arrowMenu">&#9660;</span></h5>
+                <a v-else :href="item.url"><h5  class="m-0">{{item.title}}</h5></a>
             </li>
         </ul>
-        <button class="secBtn bigBtn" @click="checkApp"><a href="#"><h2>View Courses</h2></a></button>
+        <button class="secBtn bigBtn m-0" @click="checkApp"><a href="#"><h4 class="m-0">View Courses</h4></a></button>
         </div>
     </nav>
 </template>
@@ -59,6 +59,7 @@ export default {
             }
             ul {
                 display: flex;
+                align-items: center;
                 list-style: none;
                 gap: 30px;
                 padding-right: 30px;
@@ -67,7 +68,7 @@ export default {
                 }
             }
             button {
-                h2 {
+                h4 {
                     text-transform: uppercase;
                 }
             }
