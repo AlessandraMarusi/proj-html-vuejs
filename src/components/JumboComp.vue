@@ -2,8 +2,8 @@
     <section>
         <div class="myContainer">
             <h1>Key to your success</h1>
-            <p>EduPrime is the most versatile WorkdPress theme for educational purposes, showcasing universities, courses, secondary schools etc.</p>
-            <button class="secBtn bigBtn"><font-awesome-icon icon="fa-solid fa-magnifying-glass" />Search courses</button>
+            <p class="my-5">EduPrime is the most versatile WorkdPress theme for educational purposes, showcasing universities, courses, secondary schools etc.</p>
+            <button class="secBtn bigBtn mx-4"><font-awesome-icon icon="fa-solid fa-magnifying-glass" />Search courses</button>
             <button class="thirdBtn bigBtn"><font-awesome-icon icon="fa-solid fa-user-plus" />Appry for university</button>
         </div>
         <img class="waveImg" src="../assets/img/Wave-1.png" alt="">
@@ -25,7 +25,7 @@ section {
     height: 700px;
     overflow: hidden;
     .myContainer {
-        width: 50%;
+        width: 40%;
         margin: 0 auto;
         padding-top: 150px;
         text-align: center;
