@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <header>
+      <div class="imgFilter"></div>
       <nav-comp/>
       <jumbo-comp/>
     </header>
@@ -31,6 +32,16 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./style/general"
-
+@import "./style/general";
+header {
+  background-image: url("./assets/img/theme_slider2_bg-1.jpg");
+  position: relative;
+  .imgFilter {
+    background-color: $bgColor;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 90%;
+  }
+}
 </style>
