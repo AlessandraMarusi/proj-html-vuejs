@@ -5,7 +5,7 @@
     RENDERE RESPONSIVE
  -->
     <nav>
-        <div class="container">
+        <div class="myContainer">
             <div class="headerLogo">
             <img src="../assets/img/theme_eduprime_logo.png" alt="Edu prime logo"> 
         </div>
@@ -15,7 +15,7 @@
                 <a v-else :href="item.url"><h3>{{item.title}}</h3></a>
             </li>
         </ul>
-        <button @click="checkApp"><a href="#"><h2>View Courses</h2></a></button>
+        <button class="secBtn bigBtn" @click="checkApp"><a href="#"><h2>View Courses</h2></a></button>
         </div>
     </nav>
 </template>
@@ -38,20 +38,19 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../style/general";
     nav {
         position: relative;
         height: 150px;
         color: $txtColorOnBg;
         display: flex;
-        .container {
-            position: relative;
+        z-index: 2;
+        .myContainer {
             width: 90%;
             margin: auto;
             display: flex;
             align-items: center;
-            z-index: 2;
             .headerLogo{
                 flex-grow: 1;
                 img {
@@ -68,10 +67,6 @@ export default {
                 }
             }
             button {
-                background-color: $btnColorSec;
-                border: none;
-                border-radius: 50px;
-                padding: 20px 40px;
                 h2 {
                     text-transform: uppercase;
                 }

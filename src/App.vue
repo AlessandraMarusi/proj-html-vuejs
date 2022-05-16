@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <header>
-      <div class="imgFilter"></div>
       <nav-comp/>
       <jumbo-comp/>
+      <div class="imgFilter"></div>
     </header>
     <main>
       <main-comp/>
@@ -41,6 +41,8 @@ header {
     width: 100%;
     height: 100%;
     position: absolute;
+    top: 0%;
+    left: 0%;
     opacity: 90%;
   }
 }
