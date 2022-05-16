@@ -1,0 +1,112 @@
+{
+    "navItems":[
+        {
+            "title": "Home",
+            "link": false,
+            "url": "#"
+        },
+        {
+            "title": "Courses",
+            "link": false,
+            "url": "#"
+        },
+        {
+            "title": "Abous us",
+            "link": true,
+            "url": "#"
+        },
+        {
+            "title": "News",
+            "link": false,
+            "url": "#"
+        },
+        {
+            "title": "Pages",
+            "link": false,
+            "url": "#"
+        },
+        {
+            "title": "Contact",
+            "link": true,
+            "url": "#"
+        },
+        {
+            "title": "Purchase",
+            "link": true,
+            "url": "#"
+        }
+    ],
+    "footerItems": {
+        "socialLinks":[
+            {
+                "img": "facebook",
+                "url": "#"
+            },
+            {
+                "img": "twitter",
+                "url": "#"
+            },
+            {
+                "img": "instagram",
+                "url": "#"
+            }
+        ],
+        "firstList":[
+            {
+                "title": "Request a website",
+                "url": "#"
+            },
+            {
+                "title": "Browse Themes",
+                "url": "#"
+            },
+            {
+                "title": "Payment options",
+                "url": "#"
+            },
+            {
+                "title": "Support System",
+                "url": "#"
+            },
+            {
+                "title": "Checkout",
+                "url": "#"
+            },
+            {
+                "title": "Purchase Theme",
+                "url": "#"
+            }
+        ],
+        "searchCat":[
+            {
+                "title": "Economy",
+                "url": "#"
+            },
+            {
+                "title": "Design",
+                "url": "#"
+            },
+            {
+                "title": "Coaching",
+                "url": "#"
+            },
+            {
+                "title": "Business",
+                "url": "#"
+            },
+            {
+                "title": "Medicine",
+                "url": "#"
+            },
+            {
+                "title": "Law",
+                "url": "#"
+            },
+            {
+                "title": "Fitness",
+                "url": "#"
+            }
+        ]
+
+    }
+}
