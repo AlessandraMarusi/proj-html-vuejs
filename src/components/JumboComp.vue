@@ -27,8 +27,12 @@ section {
     .myContainer {
         width: 40%;
         margin: 0 auto;
-        padding-top: 150px;
+        padding-top: 120px;
         text-align: center;
+        h1 {
+            font-weight: 900;
+            font-size: 3.3rem;
+        }
     }
     .waveImg {
         position: absolute;
