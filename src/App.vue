@@ -6,7 +6,7 @@
       <div class="imgFilter"></div>
     </header>
     <main>
-      <main-comp/>
+      <first-main-comp/>
     </main>
     <footer>
       <footer-comp/>
@@ -15,9 +15,9 @@
 </template>
 
 <script>
+import FirstMainComp from './components/FirstMainComp.vue'
 import FooterComp from './components/FooterComp.vue'
 import JumboComp from './components/JumboComp.vue'
-import MainComp from './components/MainComp.vue'
 import NavComp from './components/NavComp.vue'
 
 export default {
@@ -25,8 +25,8 @@ export default {
   components: {
     NavComp,
     JumboComp,
-    MainComp,
-    FooterComp
+    FooterComp,
+    FirstMainComp
   }
 }
 </script>
