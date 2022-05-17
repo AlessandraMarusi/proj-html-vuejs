@@ -36,6 +36,38 @@
             "url": "#"
         }
     ],
+    "secondSectionItems":[
+        {
+            "img": "Gavel-v2.png",
+            "name": "Law Faculty",
+            "id": "1",
+            "isActive": true
+        },
+        {
+            "img": "Coins-tabs-v2.png",
+            "name": "Economy",
+            "id": "2",
+            "isActive": false
+        },
+        {
+            "img": "Medicine-tabs-v2.png",
+            "name": "Medicine",
+            "id": "3",
+            "isActive": false
+        },
+        {
+            "img": "Computer-tabs-v2.png",
+            "name": "Computer Science",
+            "id": "4",
+            "isActive": false
+        },
+        {
+            "img": "Palette-tabs-v2.png",
+            "name": "Graphic Design",
+            "id": "5",
+            "isActive": false
+        }
+    ],
     "footerItems": {
         "socialLinks":[
             {

@@ -45,10 +45,6 @@ export default {
             top: -50px;
             left: 0%;
         }
-        h2 {
-            font-weight: 900;
-            font-size: 3rem;
-        }
         p {
             padding: 30px 0;
         }
