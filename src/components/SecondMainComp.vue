@@ -15,6 +15,7 @@ CREARE UN CAROUSEL CON LE CARDS
             </div>
         </div>
         <second-comp-infos/>
+        <img src="../assets/svg/svg-0.svg" alt="">
     </section>
 </template>
 
@@ -35,6 +36,14 @@ export default {
 
 <style lang="scss" scoped>
 @import "../style/general";
+section {
+        overflow: hidden;
+    /* img {
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+    } */
+}
 .myContainer {
     text-align: center;
     width: 100%;

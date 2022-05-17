@@ -8,6 +8,7 @@
     <main>
       <first-main-comp/>
       <second-main-comp/>
+      <timeline-comp/>
     </main>
     <footer>
       <footer-comp/>
@@ -21,6 +22,7 @@ import FooterComp from './components/FooterComp.vue'
 import JumboComp from './components/JumboComp.vue'
 import NavComp from './components/NavComp.vue'
 import SecondMainComp from './components/SecondMainComp.vue'
+import TimelineComp from './components/TimelineComp.vue'
 
 export default {
   name: 'App',
@@ -29,7 +31,8 @@ export default {
     JumboComp,
     FooterComp,
     FirstMainComp,
-    SecondMainComp
+    SecondMainComp,
+    TimelineComp
   }
 }
 </script>
