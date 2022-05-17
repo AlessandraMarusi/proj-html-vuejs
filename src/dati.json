@@ -68,6 +68,23 @@
             "isActive": false
         }
     ],
+    "eventItems":[
+        {
+            "title": "Coaching Session",
+            "data": "20 May 21:30 PM",
+            "text": "Lorem ipsus dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor[...]"
+        },
+        {
+            "title": "Coaching Session",
+            "data": "24 May 18:00 PM",
+            "text": "Lorem ipsus dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor[...]"
+        },
+        {
+            "title": "Coaching Session",
+            "data": "12 Feb 13:30 PM",
+            "text": "Lorem ipsus dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor[...]"
+        }
+    ],
     "footerItems": {
         "socialLinks":[
             {

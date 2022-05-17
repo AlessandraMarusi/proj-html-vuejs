@@ -41,8 +41,8 @@ export default {
         width: 70%;
         margin: 0 auto;
         text-align: center;
-        .icon {
-            width: 50px;
+        h2{
+            color: $txtColorOnBg;
         }
         .timelineImg {
             position: absolute;

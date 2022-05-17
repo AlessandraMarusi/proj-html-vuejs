@@ -39,11 +39,10 @@ export default {
         width: 50%;
         color: $titleColor;
         .icon {
-            height: 50px;
-            width: 50px;
             position: absolute;
             top: -50px;
             left: 0%;
+            width: 50px;
         }
         p {
             padding: 30px 0;

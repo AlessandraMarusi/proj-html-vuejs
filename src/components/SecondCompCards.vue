@@ -10,16 +10,6 @@
 export default {
     name: "SecondCOmpCards",
     props:['item'],
-    computed: {
-        imgUrls(){
-            return require(this.item.img)
-        }
-    },
-    methods:{
-        checkApp(){
-            console.log(this.item)
-        }
-    }
 }
 </script>
 
