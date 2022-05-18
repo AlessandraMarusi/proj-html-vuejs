@@ -11,6 +11,9 @@
                 </div>
             </div>
         </div>
+        <div class="waveContainer">
+            <img src="../assets/img/background-wave3.png" alt="background wave decoration">
+        </div>
     </section>
 </template>
 
@@ -28,19 +31,26 @@ export default {
 
 <style lang="scss" scoped>
 @import "../style/general";
-.myContainer {
-    width: 70%;
-    margin: 0 auto;
-    text-align: center;
-    padding: 50px 0;
-    p {
-        width: 40%;
-        margin:  0 auto;
-        padding: 30px 0;
+.partners {
+    .myContainer {
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 50px 0;
+        p {
+            width: 40%;
+            margin:  0 auto;
+            padding: 30px 0;
+        }
+        img {
+            height: 50px;
+            filter: opacity(40%);
+        }
     }
-    img {
-        height: 50px;
-        filter: opacity(40%);
+    .waveContainer {
+        background-color: #F7F8FA;
+        overflow: hidden;
+        height: 300px;
     }
 }
 </style>
