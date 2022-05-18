@@ -69,6 +69,7 @@ header {
 }
 footer {
   background-color: $bgColor;
-  color: $txtColorOnBg
+  color: $txtColorOnBg;
+  padding: 100px 0;
 }
 </style>

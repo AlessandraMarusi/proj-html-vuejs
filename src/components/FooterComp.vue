@@ -30,12 +30,12 @@
           <div class="inputWrapper">
                 <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Email address...">
                 <button class="secBtn"><font-awesome-icon icon="fa-solid fa-magnifying-glass" /></button>
-            </div>
-            <h5>Search categories</h5>
-            <div class="tagsContainer">
-              <button v-for="(item, index) in searchItems" :key="index">{{item.title}}</button>
-            </div>
-            <span>ModelTheme. All rights reserved.</span>
+          </div>
+          <h5>Search categories</h5>
+          <div class="tagsContainer">
+            <button v-for="(item, index) in searchItems" :key="index">{{item.title}}</button>
+          </div>
+          <span>ModelTheme. All rights reserved.</span>
         </div>
       </div>
     </div>
@@ -67,6 +67,9 @@ export default {
   img {
     width: 300px;
   }
+  p{
+    padding: 20px 0;
+  }
   button {
     background-color: transparent;
     color: $txtColorOnBg;
@@ -74,14 +77,22 @@ export default {
     border-radius: 50%;
     width: 50px;
     height: 50px;
+    margin-right: 10px;
   }
 }
 .secondCol {
   display: flex;
   justify-content: space-around;
+  h4 {
+    font-weight: 900;
+    padding-bottom: 25px;
+  }
   ul {
     list-style: none;
     padding: 0;
+    li {
+      margin: 10px 0;
+    }
   }
 }
 .thirdCol {
@@ -103,11 +114,16 @@ export default {
       border-radius: 50%;
     }
   }
+  h5 {
+    font-weight: 900;
+    padding: 40px 0 15px;
+  }
   .tagsContainer {
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
     gap: 10px;
+    padding-bottom: 20px;
     button {
       background-color: transparent;
       border: 1px solid $white;
