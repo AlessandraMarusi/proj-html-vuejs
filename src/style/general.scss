@@ -20,18 +20,38 @@ a{
     color: $txtColorOnBg;
     border: none;
     border-radius: 50px;
+    font-weight: 900;
+    transition: 0.5s;
 }
 .secBtn {
     background-color: $btnColorSec;
     color: $txtColorOnBg;
     border: none;
     border-radius: 50px;
+    font-weight: 900;
+    transition: 0.5s;
+}
+.secBtn a {
+    transition: 0.5s;
+    font-weight: 900;
+}
+.secBtn:hover{
+    background-color: $btnColorThird;
+    color: $txtColorBg;
+}
+.secBtn:hover a {
+    color: $txtColorBg
 }
 .thirdBtn {
     background-color: $btnColorThird;
     color: $txtColorBg;
     border: none;
     border-radius: 50px;
+    
+}
+.thirdBtn:hover, .firstBtn:hover {
+    background-color: $btnColorSec;
+    color: $txtColorOnBg;
 }
 .bigBtn {
     padding: 20px 40px;

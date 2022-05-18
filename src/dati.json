@@ -3,12 +3,24 @@
         {
             "title": "Home",
             "link": false,
-            "url": "#"
+            "url": "#",
+            "menuItems":[
+               { "txt": "Driving School"},
+               { "txt": "High School"},
+               { "txt": "Kinder Garten"},
+               { "txt": "Header Video"}
+            ]
         },
         {
             "title": "Courses",
             "link": false,
-            "url": "#"
+            "url": "#",
+            "menuItems":[
+                { "txt": "Our Courses"},
+                { "txt": "Single Courses"},
+                { "txt": "Instructor Profile"},
+                { "txt": "Become A Teacher"}
+             ]
         },
         {
             "title": "Abous us",
@@ -18,12 +30,23 @@
         {
             "title": "News",
             "link": false,
-            "url": "#"
+            "url": "#",
+            "menuItems":[
+                { "txt": "EduPrime Blog"},
+                { "txt": "Single Post"},
+                { "txt": "Category Post"}
+             ]
         },
         {
             "title": "Pages",
             "link": false,
-            "url": "#"
+            "url": "#",
+            "menuItems":[
+                { "txt": "How it Works"},
+                { "txt": "Single Event"},
+                { "txt": "University Shop"},
+                { "txt": "Single Product"}
+             ]
         },
         {
             "title": "Contact",
