@@ -138,17 +138,17 @@
         }
     ],
     "footerItems": {
-        "socialLinks":[
+        "socialList":[
             {
-                "img": "facebook",
+                "icon": "fa-facebook-f",
                 "url": "#"
             },
             {
-                "img": "twitter",
+                "icon": "fa-twitter",
                 "url": "#"
             },
             {
-                "img": "instagram",
+                "icon": "fa-instagram",
                 "url": "#"
             }
         ],
@@ -178,7 +178,33 @@
                 "url": "#"
             }
         ],
-        "searchCat":[
+        "secondList":[
+            {
+                "title": "Purchase Theme",
+                "url": "#"
+            },
+            {
+                "title": "Our Benefits",
+                "url": "#"
+            },
+            {
+                "title": "Our Team",
+                "url": "#"
+            },
+            {
+                "title": "Our Services",
+                "url": "#"
+            },
+            {
+                "title": "Other Products",
+                "url": "#"
+            },
+            {
+                "title": "My account",
+                "url": "#"
+            }
+        ],
+        "searchList":[
             {
                 "title": "Economy",
                 "url": "#"

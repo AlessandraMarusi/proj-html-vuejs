@@ -67,4 +67,8 @@ header {
     opacity: 90%;
   }
 }
+footer {
+  background-color: $bgColor;
+  color: $txtColorOnBg
+}
 </style>
