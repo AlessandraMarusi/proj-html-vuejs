@@ -22,7 +22,7 @@ export default {
     width: 70%;
     margin: 25px auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     gap: 50px;
     .txtContainer {
         width: 50%;
@@ -31,10 +31,13 @@ export default {
         justify-content: center;
         align-items: flex-start;
         h3 {
-            font-weight: bolder;
+            font-weight: 900;
+            font-size: 2.5rem;
         }
         p {
             width: 80%;
+            color: $txtColor;
+            padding: 25px 0;
         }
     }
 }

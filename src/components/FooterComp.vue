@@ -66,6 +66,7 @@ export default {
 .firstCol{
   img {
     width: 300px;
+    cursor: pointer;
   }
   p{
     padding: 20px 0;
@@ -78,6 +79,10 @@ export default {
     width: 50px;
     height: 50px;
     margin-right: 10px;
+    transition: 0.3s;
+  }
+  button:hover {
+    background-color: $btnColorSec;
   }
 }
 .secondCol {
@@ -92,6 +97,12 @@ export default {
     padding: 0;
     li {
       margin: 10px 0;
+      a {
+        transition: 0.5s;
+      }
+      a:hover {
+        color: $txtColorHover;
+      }
     }
   }
 }
@@ -108,9 +119,9 @@ export default {
       position: absolute;
       top: 50%;
       right: 0%;
-      transform: translate(0%, -50%);
-      height: 65px;
-      width: 65px;
+      transform: translate(5%, -50%);
+      height: 67px;
+      width: 67px;
       border-radius: 50%;
     }
   }
@@ -130,6 +141,10 @@ export default {
       border-radius: 25px;
       padding: 5px 15px;
       color: $txtColorOnBg;
+      transition: 00.3s;
+    }
+    button:hover {
+      background-color: $btnColorSec;
     }
   }
   span {

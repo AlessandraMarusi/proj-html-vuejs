@@ -6,19 +6,19 @@
  -->
     <nav>
         <div class="myContainer">
-            <div class="headerLogo">
-            <img src="../assets/img/theme_eduprime_logo.png" alt="Edu prime logo"> 
-        </div>
-        <ul class="m-0 navItems">
-            <li class="m-0" :class="{menuItem :! item.link}" v-for="(item, index) in datiNav" :key="index">
-                <a class="menuLink" v-if="item.link !== true">{{item.title}} <span class="arrowMenu">&#9660;</span></a>
-                <a v-else :href="item.url"><h5  class="m-0">{{item.title}}</h5></a>
-                <ul class="dropdownMenu">
-                    <li v-for="(dropdownItem, index) in item.menuItems" :key="index">{{dropdownItem.txt}}</li>
-                </ul>
-            </li>
-        </ul>
-        <button class="secBtn bigBtn m-0" @click="checkApp"><a href="#"><h4 class="m-0">View Courses</h4></a></button>
+                <div class="headerLogo">
+                    <img src="../assets/img/theme_eduprime_logo.png" alt="Edu prime logo"> 
+                </div>
+            <ul class="m-0 navItems">
+                <li class="m-0" :class="{menuItem :! item.link}" v-for="(item, index) in datiNav" :key="index">
+                    <a class="menuLink" v-if="item.link !== true">{{item.title}} <span class="arrowMenu">&#9660;</span></a>
+                    <a v-else :href="item.url">{{item.title}}</a>
+                    <ul class="dropdownMenu">
+                        <li v-for="(dropdownItem, index) in item.menuItems" :key="index">{{dropdownItem.txt}}</li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="secBtn bigBtn m-0" @click="checkApp"><a href="#"><h4 class="m-0">View Courses</h4></a></button>
         </div>
     </nav>
 </template>
@@ -58,6 +58,7 @@ export default {
                 flex-grow: 1;
                 img {
                     width: 300px;
+                    cursor: pointer;
                 }
             }
             .secBtn:hover {
@@ -72,6 +73,10 @@ export default {
                 padding-right: 30px;
                 li {
                     cursor: pointer;
+                    a {
+                        font-weight: 900;
+                        font-size: 1.1rem;
+                    }
                 }
                 .arrowMenu {
                     font-size: 0.5rem;
@@ -79,9 +84,6 @@ export default {
                 a:hover{
                     color: $txtColorHover;
                 }
-                /* .menuItem {
-                    position: relative;
-                } */
                 .menuItem:hover .dropdownMenu {
                     opacity: 1;
                     visibility: visible;
@@ -116,7 +118,8 @@ export default {
             button {
                 h4 {
                     text-transform: uppercase;
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
+                    font-weight: 900;
                 }
             }
         }

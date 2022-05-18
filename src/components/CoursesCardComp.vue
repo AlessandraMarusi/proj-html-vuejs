@@ -3,12 +3,12 @@
     <div class="myCard">
         <div class="content">
             <img class="icon" :src="require('../assets/img/'+item.img)" alt="">
-            <h3>{{item.title}}</h3>
-            <span>{{item.teacher}}</span>
-            <span>{{item.price}}</span>
+            <a href="#"><h5>{{item.title}}</h5></a>
+            <p><font-awesome-icon icon="fa-regular fa-user" /> Teacher: <span class="bolder">{{item.teacher}}</span></p>
+            <p><font-awesome-icon icon="fa-regular fa-money-bill-1" /> Price: <span class="bolder">{{item.price}}</span></p>
         </div>
-        <button class="firstBtn smallBtn">View Course</button>
     </div>
+    <button class="firstBtn smallBtn"><font-awesome-icon icon="fa-regular fa-eye" /> View Course</button>
 </div>
 </template>
 
@@ -23,24 +23,43 @@ export default {
 @import "../style/general";
     .myCard {
         background-color: $white;
-        border-radius: 20px;
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 0px 0px 2px 0px #646464;
+        box-shadow: 0px 0px 10px 0px #d6d2d2;
+        text-align: center;
         .content {
-            padding: 50px 25px;
-            
-            h3 {
+            padding: 30px 0px;
+            .icon {
+                width: 70px;
+                transition: 0.5s;
+            }
+            .icon:hover {
+                transform: scale(1.1);
+            }
+            a {
+                color: $titleColor;
+                h5 {
                 font-weight: 900;
+                }
+            }
+            a:hover {
+                color: $txtColorBg;
             }
         }
+    }
+    .col-lg-3 {
+        position: relative;
         button {
             position: absolute;
-            left: 50%;
             bottom: 0%;
+            left: 50%;
             transform: translate(-50%, 50%);
+            min-width: 50%;
         }
+    }
+    .bolder {
+        font-weight: bolder;
     }
 </style>

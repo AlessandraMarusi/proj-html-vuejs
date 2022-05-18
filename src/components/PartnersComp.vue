@@ -45,6 +45,11 @@ export default {
         img {
             height: 50px;
             filter: opacity(40%);
+            transition: 0.5s;
+            cursor: pointer;
+        }
+        img:hover {
+            filter: none;
         }
     }
     .waveContainer {

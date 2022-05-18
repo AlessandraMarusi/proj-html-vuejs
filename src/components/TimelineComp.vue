@@ -34,6 +34,7 @@ export default {
 @import "../style/general";
 .timeline {
     background-color: $bgColor;
+    color: $txtColorOnBg;
     height: 700px;
     position: relative;
     overflow: hidden;

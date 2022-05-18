@@ -33,7 +33,6 @@ section {
     .myContainer {
         width: 70%;
         margin: 0 auto;
-        text-align: center;
         .container {
             padding: 50px 0;
         }
