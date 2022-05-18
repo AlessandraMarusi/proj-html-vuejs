@@ -13,6 +13,7 @@
       <courses-comp/>
       <info-comp/>
       <subscribe-bar-comp/>
+      <partners-comp/>
     </main>
     <footer>
       <footer-comp/>
@@ -28,6 +29,7 @@ import FooterComp from './components/FooterComp.vue'
 import InfoComp from './components/InfoComp.vue'
 import JumboComp from './components/JumboComp.vue'
 import NavComp from './components/NavComp.vue'
+import PartnersComp from './components/PartnersComp.vue'
 import SecondMainComp from './components/SecondMainComp.vue'
 import SubscribeBarComp from './components/SubscribeBarComp.vue'
 import TimelineComp from './components/TimelineComp.vue'
@@ -44,7 +46,8 @@ export default {
     EventsComp,
     CoursesComp,
     InfoComp,
-    SubscribeBarComp
+    SubscribeBarComp,
+    PartnersComp
   }
 }
 </script>
