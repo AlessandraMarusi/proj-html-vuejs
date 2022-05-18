@@ -36,8 +36,8 @@ a{
     font-weight: 900;
 }
 .secBtn:hover{
-    background-color: $btnColorThird;
-    color: $txtColorBg;
+    background-color: $btnColor;
+    color: $txtColorOnBg;
 }
 .secBtn:hover a {
     color: $txtColorBg

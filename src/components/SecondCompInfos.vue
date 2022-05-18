@@ -1,9 +1,9 @@
 <template>
     <div class="infoContainer">
-        <img src="../assets/img/Gavel-Illustration-e1556884768193.png" alt="">
+        <img :src="require('../assets/img/'+datiCard[activeId].details[0].img)" alt="">
         <div class="txtContainer">
-            <h3>Law Faculty</h3>
-            <p>Learning from world-leading academics and practitioners, you'll not only receive an outstanding grounding in the theory of law, but you will be able to understand how those principles are applied in practice through a range of student-led activities and competitions</p>
+            <h3>{{datiCard[activeId].details[0].title}}</h3>
+            <p>{{datiCard[activeId].details[0].description}}</p>
             <button class="firstBtn bigBtn">Read More</button>
         </div>
     </div>
@@ -11,7 +11,8 @@
 
 <script>
 export default {
-    name: "SecondCompInfos"
+    name: "SecondCompInfos",
+    props:['datiCard', 'activeId'],
 }
 </script>
 
@@ -22,16 +23,18 @@ export default {
     margin: 25px auto;
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 50px;
     .txtContainer {
         width: 50%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: flex-start;
         h3 {
             font-weight: bolder;
         }
         p {
             width: 80%;
-            padding: 25px 0;
         }
     }
 }

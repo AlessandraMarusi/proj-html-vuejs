@@ -60,6 +60,10 @@ export default {
                     width: 300px;
                 }
             }
+            .secBtn:hover {
+            background-color: $btnColorThird;
+            color: $txtColorBg;
+            }
             .navItems {
                 display: flex;
                 align-items: center;

@@ -10,11 +10,11 @@ CREARE UN CAROUSEL CON LE CARDS
             </div>
             <div class="cardsContainer">
                 <div class="placeholderCard"></div>
-                <second-comp-cards :item="item" v-for="(item, index) in datiCard" :key="index"/>
+                <second-comp-cards :item="item" v-for="(item, index) in datiCard" :key="index" @activeIndex="getActiveId"/>
                 <div class="placeholderCard"></div>
             </div>
         </div>
-        <second-comp-infos/>
+        <second-comp-infos :datiCard="datiCard" :activeId="activeId" />
         <img src="../assets/svg/svg-0.svg" alt="">
     </section>
 </template>
@@ -26,11 +26,21 @@ import SecondCompInfos from './SecondCompInfos.vue'
 export default {
   components: { SecondCompCards, SecondCompInfos },
     name: "SecondMainComp",
-    data(){
-        return{
-            datiCard: data.secondSectionItems
-        }
-    },
+    props:[],
+        data(){
+            return{
+                datiCard: data.secondSectionItems,
+                activeId: 0
+            }
+        },
+    methods:{
+        getActiveId(value){
+            this.datiCard[this.activeId].isActive = false
+            this.activeId = value - 1
+            this.datiCard[this.activeId].isActive = true
+            console.log(value)
+        },
+    }
 }
 </script>
 
