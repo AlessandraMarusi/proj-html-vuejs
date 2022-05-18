@@ -85,6 +85,32 @@
             "text": "Lorem ipsus dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor[...]"
         }
     ],
+    "coursesItems":[
+        {
+            "img": "Decisions-icon.png",
+            "title": "Make Better Decisions",
+            "teacher": "James Collins",
+            "price": "$21.00"
+        },
+        {
+            "img": "Speaker-icon.png",
+            "title": "How to be a speaker",
+            "teacher": "James Collins",
+            "price": "Free"
+        },
+        {
+            "img": "Network-icon.png",
+            "title": "Network Introductions",
+            "teacher": "James Collins",
+            "price": "Free"
+        },
+        {
+            "img": "Brand-icon.png",
+            "title": "Brand Management",
+            "teacher": "James Collins",
+            "price": "Free"
+        }
+    ],
     "footerItems": {
         "socialLinks":[
             {

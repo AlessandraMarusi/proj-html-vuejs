@@ -10,6 +10,8 @@
       <second-main-comp/>
       <timeline-comp/>
       <events-comp/>
+      <courses-comp/>
+      <info-comp/>
     </main>
     <footer>
       <footer-comp/>
@@ -18,9 +20,11 @@
 </template>
 
 <script>
+import CoursesComp from './components/CoursesComp.vue'
 import EventsComp from './components/EventsComp.vue'
 import FirstMainComp from './components/FirstMainComp.vue'
 import FooterComp from './components/FooterComp.vue'
+import InfoComp from './components/InfoComp.vue'
 import JumboComp from './components/JumboComp.vue'
 import NavComp from './components/NavComp.vue'
 import SecondMainComp from './components/SecondMainComp.vue'
@@ -35,7 +39,9 @@ export default {
     FirstMainComp,
     SecondMainComp,
     TimelineComp,
-    EventsComp
+    EventsComp,
+    CoursesComp,
+    InfoComp
   }
 }
 </script>

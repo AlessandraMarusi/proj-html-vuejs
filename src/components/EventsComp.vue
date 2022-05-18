@@ -10,7 +10,6 @@
             </div>
             <button class="secBtn bigBtn">View All</button>
         </div>
-        <img src="../assets/svg/svg-1.svg" alt="">
     </section>
 </template>
 
