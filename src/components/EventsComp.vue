@@ -39,6 +39,9 @@ export default {
         h2{
             color: $txtColorOnBg;
         }
+        .container {
+            padding: 50px 0;
+        }
     }
 }
 </style>
