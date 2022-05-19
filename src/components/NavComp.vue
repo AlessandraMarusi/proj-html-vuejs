@@ -4,11 +4,11 @@
     AGGIUNGERE EFFETTI DI HOVER
     RENDERE RESPONSIVE
  -->
-    <nav>
+    <nav id="navBar">
         <div class="myContainer">
-                <div class="headerLogo">
-                    <img src="../assets/img/theme_eduprime_logo.png" alt="Edu prime logo"> 
-                </div>
+            <div class="headerLogo">
+                <img src="../assets/img/theme_eduprime_logo.png" alt="Edu prime logo"> 
+            </div>
             <ul class="m-0 navItems">
                 <li class="m-0" :class="{menuItem :! item.link}" v-for="(item, index) in datiNav" :key="index">
                     <a class="menuLink" v-if="item.link !== true">{{item.title}} <span class="arrowMenu">&#9660;</span></a>
@@ -48,16 +48,19 @@ export default {
         height: 150px;
         color: $txtColorOnBg;
         display: flex;
-        z-index: 2;
+        z-index: 999;
         .myContainer {
-            width: 90%;
+            width: 95%;
             margin: auto;
             display: flex;
-            align-items: center;
+            gap: 25px 0;
+            /* align-items: center; */
             .headerLogo{
-                flex-grow: 1;
+                width: 15%;
+                display: flex;
+                align-items: center;
                 img {
-                    width: 300px;
+                    width: 100%;
                     cursor: pointer;
                 }
             }
@@ -66,16 +69,22 @@ export default {
             color: $txtColorBg;
             }
             .navItems {
+                flex-grow: 2;
                 display: flex;
                 align-items: center;
+                justify-content: flex-end;
                 list-style: none;
                 gap: 30px;
                 padding-right: 30px;
                 li {
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
                     cursor: pointer;
                     a {
                         font-weight: 900;
                         font-size: 1.1rem;
+                        
                     }
                 }
                 .arrowMenu {
@@ -83,11 +92,6 @@ export default {
                 }
                 a:hover{
                     color: $txtColorHover;
-                }
-                .menuItem:hover .dropdownMenu {
-                    opacity: 1;
-                    visibility: visible;
-                    top: 70%;
                 }
                 .dropdownMenu{
                     color: $titleColor;
@@ -106,6 +110,7 @@ export default {
                     box-shadow: 0 0 20px rgb(67 73 89 / 10%);
                     -webkit-box-shadow: 0 0 20px rgb(67 73 89 / 10%);
                     list-style: none;
+                    z-index: 999999;
                     li {
                         padding: 5px;
                         transition: 0.5s;
@@ -114,15 +119,33 @@ export default {
                         color: $txtColorBg;
                     }
                 }
+                .menuItem:hover .dropdownMenu, .dropdownMenu:hover, .dropdownMenu:focus {
+                    opacity: 1;
+                    visibility: visible;
+                    top: 70%;
+                }
+                /* .dropdownMenu:hover {
+                    opacity: 1;
+                    visibility: visible;
+                    top: 70%;
+                } */
             }
             button {
                 h4 {
                     text-transform: uppercase;
-                    font-size: 1.2rem;
+                    font-size: 1rem;
                     font-weight: 900;
                 }
             }
         }
     }
+    /* On screens that are 992px or less, set the background color to blue */
+    @media screen and (max-width: 1200px) {
+        .myContainer {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
     
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section id="Jumbotron">
         <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -95,6 +95,9 @@ section {
         h1 {
             font-weight: 900;
             font-size: 3.3rem;
+        }
+        button {
+            margin-top: 20px;
         }
         .secBtn:hover {
             background-color: $btnColorThird;

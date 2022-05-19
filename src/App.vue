@@ -6,6 +6,7 @@
       <div class="imgFilter"></div>
     </header>
     <main>
+      <sticky-comp/>
       <first-main-comp/>
       <second-main-comp/>
       <timeline-comp/>
@@ -31,6 +32,7 @@ import JumboComp from './components/JumboComp.vue'
 import NavComp from './components/NavComp.vue'
 import PartnersComp from './components/PartnersComp.vue'
 import SecondMainComp from './components/SecondMainComp.vue'
+import StickyComp from './components/StickyComp.vue'
 import SubscribeBarComp from './components/SubscribeBarComp.vue'
 import TimelineComp from './components/TimelineComp.vue'
 
@@ -47,7 +49,8 @@ export default {
     CoursesComp,
     InfoComp,
     SubscribeBarComp,
-    PartnersComp
+    PartnersComp,
+    StickyComp
   }
 }
 </script>

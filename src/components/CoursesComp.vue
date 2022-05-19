@@ -30,9 +30,17 @@ export default {
 section {
     @import "../style/general";
     overflow: hidden;
+    position: relative;
+    > img {
+        position: absolute;
+        top: -1%;
+        left: 0%;
+        transform: translate(-2%, 0%);
+    }
     .myContainer {
         width: 70%;
         margin: 0 auto;
+        padding-top: 100px;
         .container {
             padding: 50px 0;
         }
